@@ -46,7 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Handle.js" />
      <Compile Include="Assets\MainLoop.js" />
-     <Compile Include="Assets\SnakeScripts\SnakeBeahv.js" />
+     <Compile Include="Assets\SnakeChar\SnakeScripts\SnakeBeahv.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />

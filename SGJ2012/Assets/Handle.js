@@ -11,7 +11,7 @@ function Update () {
 function OnTriggerStay (other : Collider) {
 	if (other.name == "Snake") {
 		var SB : SnakeBeahv = other.GetComponent("SnakeBeahv");
-		SB.JumpAndEat(other.transform.position);
+		//SB.JumpAndEat(other.transform.position);
 		FuckOff();
 	}
 	

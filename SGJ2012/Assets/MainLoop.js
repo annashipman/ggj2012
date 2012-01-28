@@ -18,10 +18,10 @@ privateBlocks[i] = Instantiate (this.blocks[0], Vector3((i * 10.0), -6.0, 0), Qu
 function Update () {
 ///camera posistion!!!!!!!
 var nepos: Vector3 = snake.transform.position;
+Debug.Log(nepos);
 nepos.z -= 10.0;
-if(nepos.y>0.0){
 cam.transform.position = Vector3.Lerp(cam.transform.position, nepos, (Time.time - 0.6) / 1.0);
-}
+
 ///camera posistion!!!!!!!
 
 //figure out if we are reaching the edge of the screen.
