@@ -24,8 +24,9 @@ function Start () {
 
 // Update is called once per frame
 function Update () {
-	transform.position.x += 0.1;
-	if (Input.GetButton ("Fire1") && Time.time > nextJump && ontheground) {
+	//transform.position.x += 0.1;
+	rigidbody.velocity.x = 10.0;
+	/*if (Input.GetButton ("Fire1") && Time.time > nextJump && ontheground) {
 		nextJump = Time.time + jumpRate;
 	jumpdelay +=1;
 	}
@@ -47,7 +48,7 @@ function Update () {
 			ontheground = false;
 			jumpdelay = 0;
 		}
-	}
+	}*/
 
 	//--------------------------------------------
 	SetSpriteAnimation(colCount,rowCount,rowNumber,colNumber,totalCells,fps);
