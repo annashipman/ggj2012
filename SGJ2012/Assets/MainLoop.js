@@ -1,11 +1,21 @@
 public var levenum = 0;
 public var cam;
 public var snake: GameObject;
+public var blocks : GameObject[] = new GameObject[20];
 private var levels: Transform[] = new Transform[100];
+private var privateBlocks : GameObject[] = new GameObject[20];
 
 function Start(){
-	cam = Camera.main;
-	}
+cam = Camera.main;
+
+
+for (var i : int = 0;i < 10; i++) {
+//how to generate a new game object when it reaches 
+privateBlocks[i] = Instantiate (blocks[0], Vector3(i * 2.0, 0, 0), Quaternion.identity);
+}
+
+	
+}
 	
 function Update () {
 ///camera posistion!!!!!!!
@@ -17,4 +27,6 @@ cam.transform.position = Vector3.Lerp(cam.transform.position, nepos, (Time.time 
 ///camera posistion!!!!!!!
 
 }
+
+
 
