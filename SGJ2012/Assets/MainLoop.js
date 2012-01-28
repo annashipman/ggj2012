@@ -28,15 +28,13 @@ nepos.z -= 10.0;
 cam.transform.position = Vector3.Lerp(cam.transform.position, nepos, (Time.time - 0.6) / 1.0);
 
 ///camera posistion!!!!!!!
-Debug.Log(this.mostRightBlock + " trig " + this.newBlockTrigger + " x " + snake.transform.position.x);
 //figure out if we are reaching the edge of the screen
 if (snake.transform.position.x > this.newBlockTrigger ){
 		var i = this.mostRightBlock;
 		this.mostRightBlock = this.mostRightBlock+1; //unless it's less than 10
-		var groundBlock = Instantiate (this.blocks[i], Vector3((this.mostRightBlock * 10.0), -6.0, 0), Quaternion.identity);
+		var groundBlock = Instantiate (this.blocks[0], Vector3((this.mostRightBlock * 10.0), -6.0, 0), Quaternion.identity);
 		privateBlocks[i] = groundBlock;
 		this.newBlockTrigger = this.newBlockTrigger + 10;
-		Debug.Log(this.mostRightBlock + " trig " + this.newBlockTrigger);
 }
 }
 
