@@ -9,7 +9,8 @@ function Start(){
 cam = Camera.main;
 
 for (var i : int = 0;i < 10; i++) {
-privateBlocks[i] = Instantiate (this.blocks[0], Vector3((i * 10.0), -6.0, 0), Quaternion.identity);
+var groundBlock = Instantiate (this.blocks[0], Vector3((i * 10.0), -6.0, 0), Quaternion.identity);
+privateBlocks[i] = groundBlock;
 }
 
 	
