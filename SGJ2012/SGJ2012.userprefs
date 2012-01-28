@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MainLoop.js">
     <Files>
-      <File FileName="Assets\Handle.js" Line="14" Column="5" />
-      <File FileName="Assets\MainLoop.js" Line="3" Column="23" />
+      <File FileName="Assets\MainLoop.js" Line="32" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
