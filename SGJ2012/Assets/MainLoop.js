@@ -27,7 +27,7 @@ this.newBlockTrigger = 12;
 function Update () {
 ///camera posistion!!!!!!!
 var nepos: Vector3 = snake.transform.position;
-nepos.z -= 10.0;
+nepos.z -= 15.0;
 nepos.y += 1.0;
 cam.transform.position = Vector3.Lerp(cam.transform.position, nepos, (Time.time - 0.6) / 1.0);
 var snakeOff: float = (snake.transform.position.x-cam.transform.position.x);
