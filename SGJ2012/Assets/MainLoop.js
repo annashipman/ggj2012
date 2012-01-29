@@ -2,7 +2,7 @@
 public var levenum = 0;
 public var cam;
 public var snake: GameObject;
-public var blocks : GameObject[] = new GameObject[20];
+public var blocks : GameObject[] = new GameObject[36];
 private var levels: Transform[] = new Transform[100];
 private var privateBlocks : GameObject[] = new GameObject[200];
 private var endBlock : int;
@@ -40,11 +40,10 @@ if (snake.transform.position.x > this.newBlockTrigger ){
 		//get the x of the current block
 		Debug.Log(this.endBlock);
 		//update the block to instantiate
-		if (this.endBlock < 9) {
+		if (this.endBlock < 35) {
 		Debug.Log("updating");
 		this.endBlock = this.endBlock + 1;
 		} else {
-		Debug.Log("9");
 		this.endBlock = 0;
 		}
 		//update block counter
