@@ -12,14 +12,14 @@ private var blockCounter : int;
 function Start(){
 cam = Camera.main;
 Debug.Log(blocks[0]);
-for (var i : int = 1;i < 3; i++) {
+for (var i : int = 0;i < 3; i++) {
 var groundBlock = Instantiate (this.blocks[i], Vector3((i * 10.0), -6.0, 0), Quaternion.identity);
 privateBlocks[i] = groundBlock;
 this.endBlock = i;
 this.blockCounter = i;
 }
 
-this.newBlockTrigger = 18;
+this.newBlockTrigger = 12;
 
 	
 }
@@ -38,10 +38,8 @@ if (snake.transform.position.x > this.newBlockTrigger ){
 		this.newBlockTrigger = this.newBlockTrigger + 10;
 		
 		//get the x of the current block
-		Debug.Log(this.endBlock);
 		//update the block to instantiate
 		if (this.endBlock < 35) {
-		Debug.Log("updating");
 		this.endBlock = this.endBlock + 1;
 		} else {
 		this.endBlock = 0;
@@ -62,7 +60,9 @@ if (snake.transform.position.x > this.newBlockTrigger ){
 		//then destroy the first block - really? we might need it again!
 		//uninstantiate?
 		//or can destroy as it's a prefab?
-		//Destroy(privateBlocks[leftBlock]);
+		var blockToRemove = this.blockCounter - 4;
+		Debug.Log("block: " + this.blockCounter + " to remove: " + blockToRemove);
+		Destroy(privateBlocks[(this.blockCounter - 4)]);
 }
 }
 
