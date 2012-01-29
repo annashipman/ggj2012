@@ -44,10 +44,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Chars\Nodes\DownNode.js" />
-     <Compile Include="Assets\Chars\Nodes\GravityNode.js" />
-     <Compile Include="Assets\Chars\Nodes\UpNode.js" />
-     <Compile Include="Assets\Chars\SnakeChar\SnakeScripts\SnakeBeahv.js" />
+     <Compile Include="Assets\GameAssets\Chars\Nodes\CoinNode.js" />
+     <Compile Include="Assets\GameAssets\Chars\Nodes\DownNode.js" />
+     <Compile Include="Assets\GameAssets\Chars\Nodes\GravityNode.js" />
+     <Compile Include="Assets\GameAssets\Chars\Nodes\UpNode.js" />
+     <Compile Include="Assets\GameAssets\Chars\SnakeChar\SnakeScripts\FakeSnakeBeahv.js" />
+     <Compile Include="Assets\GameAssets\Chars\SnakeChar\SnakeScripts\SnakeBeahv.js" />
      <Compile Include="Assets\MainLoop.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />

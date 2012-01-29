@@ -30,7 +30,11 @@ var nepos: Vector3 = snake.transform.position;
 nepos.z -= 10.0;
 nepos.y += 1.0;
 cam.transform.position = Vector3.Lerp(cam.transform.position, nepos, (Time.time - 0.6) / 1.0);
-
+var snakeOff: float = (snake.transform.position.x-cam.transform.position.x);
+if(snakeOff<-11){
+//do some kill the snake code here??????
+}
+//Debug.Log(snake.transform.position.x-cam.transform.position.x);//<-11.0
 //figure out if we are reaching the edge of the screen
 //if the snake x has got past halfway through the 3rd block
 if (snake.transform.position.x > this.newBlockTrigger ){
