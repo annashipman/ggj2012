@@ -53,11 +53,14 @@ if(ontheground){
 //on the ground
 rowNumber = 1;
 colNumber = 0;
-totalCells = 2;
+totalCells = 1;
 //switch off all the tail shit.
 tailOnOff(false);
 }else{
 //switch the tail shit on
+rowNumber = 2;
+colNumber = 0;
+totalCells = 1;
 tailOnOff(true);
 }
 
