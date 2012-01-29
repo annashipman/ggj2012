@@ -24,7 +24,7 @@ public var Aud: AudioClip[] = new AudioClip[11];
 private var pos: int = 0;
 private var posGrade: float[] = new float[11];
 private var SoundObject: AudioSource;
-
+private var oldlev: int = 0;
 private var kindatimer: int = 0;
 function Start(){  
 //---------------
@@ -48,6 +48,7 @@ AudClips[0].Play();
 //---
 function nextClip(){
 pos++;
+Debug.Log("pos"+pos);
 if(pos>10) pos = 0;
 numAudClips++;
 if(numAudClips == 2) numAudClips = 0;
@@ -59,11 +60,24 @@ AudClips[numAudClips].Play();
 AudClips[numAudClips].time = AudClips[mins].time;
 }
 
+function Levelcnt(lev:int){
+var temp:float = (lev/35.0)*11.0;
+var tempy: int = temp;
+
+
+if(oldlev == tempy){
+//do fuck all
+}else{
+nextClip();
+oldlev = tempy;
+}
+}
+
 //---
 function Update(){
 kindatimer++;
 if(kindatimer > 200){
-nextClip();
+//nextClip();
 kindatimer = 0;
 }
 if(pos>0){

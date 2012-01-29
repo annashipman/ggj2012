@@ -67,6 +67,12 @@ if (snake.transform.position.x > this.newBlockTrigger ){
 		//or can destroy as it's a prefab?
 		var blockToRemove = this.blockCounter - 5;
 		Destroy(privateBlocks[(blockToRemove)]);
+		var music : GameObject;
+// This will return the game object named Hand in the scene.
+		music = GameObject.Find("MusicContainr");
+		var musc: SoundCnt = music.GetComponent(SoundCnt);
+		musc.Levelcnt(blockCounter);
+		
 }
 }
 
