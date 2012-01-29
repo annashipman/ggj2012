@@ -1,6 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\baerShake.js">
+    <Files>
+      <File FileName="Assets\baerShake.js" Line="19" Column="1" />
+      <File FileName="Assets\MainLoop.js" Line="1" Column="1" />
+      <File FileName="Assets\FinalAss\Music\SoundCnt.js" Line="1" Column="1" />
+      <File FileName="Assets\FinalAss\Wall\WallSound.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
