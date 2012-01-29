@@ -19,7 +19,7 @@ this.endBlock = i;
 this.blockCounter = i;
 }
 
-this.newBlockTrigger = 12;
+this.newBlockTrigger = 10;
 
 	
 }
@@ -65,9 +65,8 @@ if (snake.transform.position.x > this.newBlockTrigger ){
 		//then destroy the first block - really? we might need it again!
 		//uninstantiate?
 		//or can destroy as it's a prefab?
-		var blockToRemove = this.blockCounter - 4;
-		Debug.Log("block: " + this.blockCounter + " to remove: " + blockToRemove);
-		Destroy(privateBlocks[(this.blockCounter - 4)]);
+		var blockToRemove = this.blockCounter - 5;
+		Destroy(privateBlocks[(blockToRemove)]);
 }
 }
 
