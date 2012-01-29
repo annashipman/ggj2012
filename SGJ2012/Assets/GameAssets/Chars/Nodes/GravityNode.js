@@ -24,7 +24,7 @@ if(other.name == "Snake"){
 holding = 10;
 //------
 //-------------------------------------
-var inertia: float = 1.004;
+var inertia: float = 1.02;
 var	k: float = 0.9;
 //-------------------------------------
 //------
@@ -35,8 +35,9 @@ ydis = ydis* inertia + diffy*k;
 if(ydis> 10) ydis = 10;
 if(xdis> 10) xdis = 10;
 other.rigidbody.velocity.y = ydis;
-other.rigidbody.velocity.x = xdis;
+other.rigidbody.velocity.x = xdis+10;
 inside.transform.position = other.transform.position;
+
 }
 
 

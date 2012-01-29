@@ -44,12 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FinalAss\Chars\Bees\BeeScript.js" />
+     <Compile Include="Assets\FinalAss\Chars\SnakeChar\SnakeScripts\FakeSnakeBeahv.js" />
+     <Compile Include="Assets\FinalAss\Chars\SnakeChar\SnakeScripts\SnakeBeahv.js" />
+     <Compile Include="Assets\FinalAss\Music\SoundCnt.js" />
+     <Compile Include="Assets\FinalAss\Wall\WallSound.js" />
      <Compile Include="Assets\GameAssets\Chars\Nodes\CoinNode.js" />
      <Compile Include="Assets\GameAssets\Chars\Nodes\DownNode.js" />
      <Compile Include="Assets\GameAssets\Chars\Nodes\GravityNode.js" />
      <Compile Include="Assets\GameAssets\Chars\Nodes\UpNode.js" />
-     <Compile Include="Assets\GameAssets\Chars\SnakeChar\SnakeScripts\FakeSnakeBeahv.js" />
-     <Compile Include="Assets\GameAssets\Chars\SnakeChar\SnakeScripts\SnakeBeahv.js" />
      <Compile Include="Assets\MainLoop.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
